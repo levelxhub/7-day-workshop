@@ -6,6 +6,9 @@ const config = {
   build: {
     outDir: '../dist',
   },
+  server: {
+    host: true,
+  },
 };
 
 export default config;

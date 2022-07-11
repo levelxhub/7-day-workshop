@@ -9,8 +9,24 @@
   </head>
   <body>
     <div id="app">
-      <h1>Hello World!</h1>
+      <h1>Simple Calculator</h1>
+      <input id="firstNumber" type="number" placeholder="Enter first number" />
+      <input
+        id="secondNumber"
+        type="number"
+        placeholder="Enter second number"
+      />
+      <br />
+      <br />
+      <input id="result" type="number" placeholder="Result" readonly />
+      <br />
+      <br />
+      <button type="button" onclick="add()">+</button>
+      <button type="button" onclick="sub()">-</button>
+      <button type="button" onclick="multiply()">*</button>
+      <button type="button" onclick="divide()">/</button>
+      <button type="button" onclick="reset()">Clear</button>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
