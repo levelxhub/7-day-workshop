@@ -9,23 +9,44 @@
   </head>
   <body>
     <div id="app">
-      <h1>Simple Calculator</h1>
-      <input id="firstNumber" type="number" placeholder="Enter first number" />
-      <input
-        id="secondNumber"
-        type="number"
-        placeholder="Enter second number"
-      />
-      <br />
-      <br />
-      <input id="result" type="number" placeholder="Result" readonly />
-      <br />
-      <br />
-      <button type="button" onclick="add()">+</button>
-      <button type="button" onclick="sub()">-</button>
-      <button type="button" onclick="multiply()">*</button>
-      <button type="button" onclick="divide()">/</button>
-      <button type="button" onclick="reset()">Clear</button>
+      <h1>Advanced Calculator</h1>
+      <div id="calculator">
+        <div class="display">
+          <p class="inputs">
+            <span id="n1">308</span>
+            <span id="operator">x</span>
+            <span id="n2">42</span>
+          </p>
+          <p id="result" class="lg">12936</p>
+        </div>
+
+        <div class="buttons">
+          <button class="btn all-clear utility">AC</button>
+          <button class="btn clear utility">C</button>
+          <button class="btn percentage utility">%</button>
+          <button class="btn operator">÷</button>
+
+          <button class="btn number">7</button>
+          <button class="btn number">8</button>
+          <button class="btn number">9</button>
+          <button class="btn operator">x</button>
+
+          <button class="btn number">4</button>
+          <button class="btn number">5</button>
+          <button class="btn number">6</button>
+          <button class="btn operator">-</button>
+
+          <button class="btn number">1</button>
+          <button class="btn number">2</button>
+          <button class="btn number">3</button>
+          <button class="btn operator">+</button>
+
+          <button class="btn number">0</button>
+          <button class="btn number">00</button>
+          <button class="btn number">.</button>
+          <button class="btn equal operator">=</button>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
   </body>

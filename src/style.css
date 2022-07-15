@@ -1,3 +1,11 @@
+:root {
+  --bg: #23252c;
+  --bg-light: #2a2d35;
+  --btn-bg: #282b32;
+  --operator: #dc6e6b;
+  --utility: #78f7d6;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,4 +13,75 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+p,
+span {
+  margin: 0;
+}
+
+#calculator {
+  width: max-content;
+  margin: 0 auto;
+  background: var(--bg);
+  color: white;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.display {
+  text-align: right;
+  padding: 72px 24px 32px 24px;
+  height: 66px;
+}
+
+.inputs {
+  font-weight: bold;
+}
+
+.lg {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+#operator {
+  color: var(--operator);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  justify-items: center;
+  padding: 24px;
+  border-radius: 24px 24px 0 0;
+  background: var(--bg-light)
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: var(--btn-bg);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /* box-shadow: 0 4px 24px #0000005c; */
+}
+
+.btn:active {
+  background: var(--bg);
+}
+
+.utility {
+  color: var(--utility);
+}
+
+.operator {
+  color: var(--operator);
 }
